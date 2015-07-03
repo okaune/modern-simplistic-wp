@@ -1,0 +1,90 @@
+/*_hero.scss*/
+body.home {
+	background: url(img/background-large.jpg) no-repeat center center/cover fixed;
+}
+
+// Buttons
+.more {
+	margin-top: 20px;
+	padding: 0.5em 1.5em;
+}
+
+header {
+	width: 100%;
+	background: $white;
+	overflow: hidden;
+	position: fixed;
+	z-index: 99;
+	transition: box-shadow .5s;
+	a {
+		@include font-size(20px);
+    font-weight: 800;
+    color: $black;
+		text-align: center;
+		text-transform: uppercase;
+		height: 100%;
+		display: block;
+		line-height: 90px;
+		transition: line-height .5s;
+		&:hover {
+			color: $black;
+		}
+	}
+}
+
+#intro {
+	float: left;
+	width: 100%;
+	min-height: 750px;
+	padding-top: 150px;
+	padding-bottom: 70px;
+	text-align: center;
+	h1 {
+		@include font-size(28px);
+    font-weight: 300;
+    color: $white;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+}
+
+.dropshadow {
+	text-shadow: black 1px 1px 10px;
+}
+
+.front-menu {
+	max-width: 600px;
+	margin: 100px auto 0 auto;
+	text-align: center;
+	.icon {
+		width: 200px;
+	}
+	&:hover .icon {
+		color: $primary_color;
+	}
+}
+
+#profile {
+	float: left;
+	width: 100%;
+	background: rgba(255, 255, 255, .9);
+}
+
+#profile:before {
+	display: block;
+	content: " ";
+	margin-top: -90px;
+	height: 90px;
+	visibility: hidden;
+}
+
+.wide-container {
+	width: 1130px;
+	padding: 0 20px;
+	margin: 0px auto;
+}
+
+.justified-gallery {
+	overflow: visible !important;
+	top: 90px;
+}

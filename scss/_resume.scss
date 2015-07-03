@@ -1,0 +1,31 @@
+.resume {
+	padding: 50px 0;
+}
+
+.resume_type {
+	color: $gray;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 0.9375em;
+}
+
+.resume_post {
+	margin-bottom: 0.625em;
+}
+
+.resume_post__date {
+	color: $gray;
+}
+
+.resume_post__role {
+	b {
+		@include font-size(20px);
+		font-weight: 600;
+		color: #333333;
+	}
+	p {
+		line-height: 1.5em;
+		@include font-size(20px);
+		color: #555555;
+	}
+}
