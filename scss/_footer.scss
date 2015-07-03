@@ -1,0 +1,41 @@
+// SVG styles
+footer {
+	min-height: 70px;
+	clear: both;
+	border-top: 1px solid #000000;
+	color: $white;
+	.wrapper {
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+	.contact {
+		width: 100%;
+		line-height: 50px;
+		@include font-size(14px);
+		text-align: center;
+	}
+	.social {
+		width: 100%;
+		padding: 9px 0;
+		text-align: center;
+		.icon-facebook-square, .icon-twitter-square, .icon-google-plus-square {
+			@include font-size(32px); // works because "width" & "height" were set using em units
+			color: $white; // works because "fill" was set to "currentColor"
+			margin: 0 5px;
+		}
+		.icon-facebook-square:hover {
+			color: #3b5998;
+		}
+
+		.icon-twitter-square:hover {
+			color: #00aced;
+		}
+
+		.icon-google-plus-square:hover {
+			color: #dd4b39;
+		}
+
+	}
+}

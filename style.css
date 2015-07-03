@@ -28,7 +28,7 @@ a {
   text-decoration: none; }
   a:hover {
     color: #ffa500;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 h3 {
   font-size: 24px;
@@ -45,23 +45,31 @@ h4 {
   height: 1em;
   fill: currentColor; }
 
+.button {
+  display: inline-block;
+  text-align: center;
+  background: #ffa500;
+  font-weight: 600;
+  color: #ffffff;
+  -webkit-transition: color 0.2s, background 0.2s;
+          transition: color 0.2s, background 0.2s;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  padding: 2rem 1rem; }
+  .button:hover {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px #ffffff; }
+  .button p {
+    margin: 0;
+    font-weight: 600; }
+
 /*_hero.scss*/
 body.home {
   background: url(img/background-large.jpg) no-repeat center center/cover fixed; }
 
 .more {
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  padding: 10px 20px;
-  background: #ffa500;
-  width: 75px;
   margin-top: 20px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #ffffff; }
-  .more:hover {
-    background: #3f3f3f; }
+  padding: 0.5em 1.5em; }
 
 header {
   width: 100%;
@@ -83,21 +91,23 @@ header {
     line-height: 90px;
     -webkit-transition: line-height .5s;
             transition: line-height .5s; }
+    header a:hover {
+      color: #000000; }
 
 #intro {
   float: left;
   width: 100%;
-  height: 100vh;
   min-height: 750px;
-  padding-top: 10%; }
+  padding-top: 150px;
+  padding-bottom: 70px;
+  text-align: center; }
   #intro h1 {
     font-size: 28px;
     font-size: 1.75rem;
     font-weight: 300;
     color: #ffffff;
     max-width: 600px;
-    margin: 0 auto;
-    text-align: center; }
+    margin: 0 auto; }
 
 .dropshadow {
   text-shadow: black 1px 1px 10px; }
@@ -106,22 +116,10 @@ header {
   max-width: 600px;
   margin: 100px auto 0 auto;
   text-align: center; }
-  .front-menu div {
-    font-size: 20px;
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: #ffffff;
-    padding: 30px 0;
-    width: 200px;
-    background: #ffa500;
-    display: block;
-    float: left;
-    margin: 0 50px;
-    text-transform: uppercase; }
-    .front-menu div:hover {
-      background: #3f3f3f; }
   .front-menu .icon {
     width: 200px; }
+  .front-menu:hover .icon {
+    color: #ffa500; }
 
 #profile {
   float: left;
@@ -143,6 +141,9 @@ header {
 .justified-gallery {
   overflow: visible !important;
   top: 90px; }
+
+.resume {
+  padding: 50px 0; }
 
 .resume_type {
   color: #888888;
@@ -166,5 +167,37 @@ header {
   font-size: 20px;
   font-size: 1.25rem;
   color: #555555; }
+
+footer {
+  min-height: 70px;
+  clear: both;
+  border-top: 1px solid #000000;
+  color: #ffffff; }
+  footer .wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0; }
+  footer .contact {
+    width: 100%;
+    line-height: 50px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-align: center; }
+  footer .social {
+    width: 100%;
+    padding: 9px 0;
+    text-align: center; }
+    footer .social .icon-facebook-square, footer .social .icon-twitter-square, footer .social .icon-google-plus-square {
+      font-size: 32px;
+      font-size: 2rem;
+      color: #ffffff;
+      margin: 0 5px; }
+    footer .social .icon-facebook-square:hover {
+      color: #3b5998; }
+    footer .social .icon-twitter-square:hover {
+      color: #00aced; }
+    footer .social .icon-google-plus-square:hover {
+      color: #dd4b39; }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,19 +5,8 @@ body.home {
 
 // Buttons
 .more {
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-	padding: 10px 20px;
-	background: $primary_color;
-	width: 75px;
 	margin-top: 20px;
-	text-transform: uppercase;
-	font-weight: 600;
-	color: $white;
-	&:hover {
-		background: $secondary_color;
-	}
+	padding: 0.5em 1.5em;
 }
 
 header {
@@ -37,22 +26,25 @@ header {
 		display: block;
 		line-height: 90px;
 		transition: line-height .5s;
+		&:hover {
+			color: $black;
+		}
 	}
 }
 
 #intro {
 	float: left;
 	width: 100%;
-	height: 100vh;
 	min-height: 750px;
-	padding-top: 10%;
+	padding-top: 150px;
+	padding-bottom: 70px;
+	text-align: center;
 	h1 {
 		@include font-size(28px);
     font-weight: 300;
     color: $white;
 		max-width: 600px;
 		margin: 0 auto;
-		text-align: center;
 	}
 }
 
@@ -64,30 +56,11 @@ header {
 	max-width: 600px;
 	margin: 100px auto 0 auto;
 	text-align: center;
-	div {
-		@include font-size(20px);
-    font-weight: 800;
-    color: $white;
-		padding: 30px 0;
-		width: 200px;
-		background: $primary_color;
-		display: block;
-		float: left;
-		margin: 0 50px;
-		text-transform: uppercase;
-		&:hover {
-			background: $secondary_color;
-		}
-	}
-	.blog {
-
-	}
-	.gallery {
-
-	}
 	.icon {
 		width: 200px;
-
+	}
+	&:hover .icon {
+		color: $primary_color;
 	}
 }
 
