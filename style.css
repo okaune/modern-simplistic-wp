@@ -14,10 +14,7 @@ Author URI: olekristian.com
 * {
   -webkit-transition: all 0.2s;
           transition: all 0.2s;
-  /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
-  /* Firefox 1 - 28 */
-  box-sizing: border-box;
-  /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */ }
+  box-sizing: border-box; }
 
 body {
   color: #000000;
@@ -34,11 +31,118 @@ a {
     text-decoration: underline; }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500; }
 
 h4 {
-  font-size: 1em; }
+  font-size: 16px;
+  font-size: 1rem; }
+
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor; }
+
+/*_hero.scss*/
+body.home {
+  background: url(img/background-large.jpg) no-repeat center center/cover fixed; }
+
+.more {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  background: #ffa500;
+  width: 75px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff; }
+  .more:hover {
+    background: #3f3f3f; }
+
+header {
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99;
+  -webkit-transition: box-shadow .5s;
+          transition: box-shadow .5s; }
+  header a {
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    display: block;
+    line-height: 90px;
+    -webkit-transition: line-height .5s;
+            transition: line-height .5s; }
+
+#intro {
+  float: left;
+  width: 100%;
+  height: 100vh;
+  min-height: 750px;
+  padding-top: 10%; }
+  #intro h1 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center; }
+
+.dropshadow {
+  text-shadow: black 1px 1px 10px; }
+
+.front-menu {
+  max-width: 600px;
+  margin: 100px auto 0 auto;
+  text-align: center; }
+  .front-menu div {
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #ffffff;
+    padding: 30px 0;
+    width: 200px;
+    background: #ffa500;
+    display: block;
+    float: left;
+    margin: 0 50px;
+    text-transform: uppercase; }
+    .front-menu div:hover {
+      background: #3f3f3f; }
+  .front-menu .icon {
+    width: 200px; }
+
+#profile {
+  float: left;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9); }
+
+#profile:before {
+  display: block;
+  content: " ";
+  margin-top: -90px;
+  height: 90px;
+  visibility: hidden; }
+
+.wide-container {
+  width: 1130px;
+  padding: 0 20px;
+  margin: 0px auto; }
+
+.justified-gallery {
+  overflow: visible !important;
+  top: 90px; }
 
 .resume_type {
   color: #888888;
@@ -53,12 +157,14 @@ h4 {
   color: #888888; }
 
 .resume_post__role b {
-  font-size: 1.2em;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #333333; }
 .resume_post__role p {
   line-height: 1.5em;
-  font-size: 1.2em;
+  font-size: 20px;
+  font-size: 1.25rem;
   color: #555555; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,117 @@
+/*_hero.scss*/
+body.home {
+	background: url(img/background-large.jpg) no-repeat center center/cover fixed;
+}
+
+// Buttons
+.more {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 10px 20px;
+	background: $primary_color;
+	width: 75px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: $white;
+	&:hover {
+		background: $secondary_color;
+	}
+}
+
+header {
+	width: 100%;
+	background: $white;
+	overflow: hidden;
+	position: fixed;
+	z-index: 99;
+	transition: box-shadow .5s;
+	a {
+		@include font-size(20px);
+    font-weight: 800;
+    color: $black;
+		text-align: center;
+		text-transform: uppercase;
+		height: 100%;
+		display: block;
+		line-height: 90px;
+		transition: line-height .5s;
+	}
+}
+
+#intro {
+	float: left;
+	width: 100%;
+	height: 100vh;
+	min-height: 750px;
+	padding-top: 10%;
+	h1 {
+		@include font-size(28px);
+    font-weight: 300;
+    color: $white;
+		max-width: 600px;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.dropshadow {
+	text-shadow: black 1px 1px 10px;
+}
+
+.front-menu {
+	max-width: 600px;
+	margin: 100px auto 0 auto;
+	text-align: center;
+	div {
+		@include font-size(20px);
+    font-weight: 800;
+    color: $white;
+		padding: 30px 0;
+		width: 200px;
+		background: $primary_color;
+		display: block;
+		float: left;
+		margin: 0 50px;
+		text-transform: uppercase;
+		&:hover {
+			background: $secondary_color;
+		}
+	}
+	.blog {
+
+	}
+	.gallery {
+
+	}
+	.icon {
+		width: 200px;
+
+	}
+}
+
+#profile {
+	float: left;
+	width: 100%;
+	background: rgba(255, 255, 255, .9);
+}
+
+#profile:before {
+	display: block;
+	content: " ";
+	margin-top: -90px;
+	height: 90px;
+	visibility: hidden;
+}
+
+.wide-container {
+	width: 1130px;
+	padding: 0 20px;
+	margin: 0px auto;
+}
+
+.justified-gallery {
+	overflow: visible !important;
+	top: 90px;
+}
