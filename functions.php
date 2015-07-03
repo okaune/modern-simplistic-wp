@@ -19,6 +19,17 @@
 	// Hide admin bar on "frontend"
 	add_filter('show_admin_bar', '__return_false');
 
+	// Add image support for featured images
+	if ( function_exists( 'add_theme_support' ) ) {
+		add_theme_support( 'post-thumbnails'  );
+	}
+
+	// Register custom image sizes
+	if ( function_exists( 'add_image_size' ) ) {
+		add_image_size( 'post_thumbnail', 303, 189, true );
+		add_image_size( 'post_image', 1920, 500, true );
+	}
+
 	// Enqueue jquery
 	if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 	function my_jquery_enqueue() {
@@ -44,5 +55,44 @@
 	}
 
 	add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+
+	// Add post type: Resume
+	function my_post_type_resume() {
+		register_post_type(
+			'resume',
+			array(
+			'label' => __('Resume'),
+			'singular_label' => __('Resume'),
+			'public' => true,
+			'query_var' => true,
+			'show_ui' => true,
+			'publicly_queryable' => true,
+			'show_in_nav_menus' => true,
+			'hierarchical' => false,
+			'capability_type' => 'post',
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'resume',
+				'with_front' => false,
+			),
+			'supports' => array(
+					'title',
+					'editor',
+					'thumbnail',
+					'excerpt',
+					'custom-fields'
+					)
+				)
+			);
+			register_taxonomy('resumecategory', 'resume', array(
+				'hierarchical' => true,
+				'label' => 'Resume kategori',
+				'singular_name' => 'Resume kategori',
+				"rewrite" => true,
+				"query_var" => true
+				)
+			);
+	}
+	add_action('init', 'my_post_type_resume');
 
 ?>
