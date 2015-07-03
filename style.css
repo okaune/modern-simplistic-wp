@@ -5,46 +5,52 @@ Description: Wordpress tema for olekristian.com 2015
 Version: 1.0
 Author: Ole Kristian Aune
 Author URI: olekristian.com
-
 */
-
-
+/* _mixins.scss */
+/*_variables.scss */
+/* Colors */
+/* Body Text Styles */
+/*_typography.scss*/
 body {
-	margin: 0;
-	font-family: Arial, Helvetica, Georgia, Sans-serif;
-	font-size: 1em;
-	background: #ffffff;
-	color: #000000;
-}
+  color: #000000;
+  font-size: 1em;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6em; }
 
-a:link,
-a:visited {
-	text-decoration: underline;
-	color: #336699;
-}
+a {
+  color: #ffa500;
+  text-decoration: none; }
+  a:hover {
+    color: #ffa500;
+    text-decoration: underline; }
 
-a:hover {
-	text-decoration: none;
-}
+h3 {
+  font-size: 1.5em;
+  font-weight: 500; }
 
-.wrapper {
-	margin: 0 auto 0 auto;
-	width: 750px;
-}
+h4 {
+  font-size: 1em; }
 
-.header {
-	float: left;
-	width: 750px;
-}
+.resume_type {
+  color: #888888;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 0.9375em; }
 
-.box {
-	float: left;
-	width: 500px;
-}
+.resume_post {
+  margin-bottom: 0.625em; }
 
-.sidebar {
-	float: left;
-	width: 240px;
-	background: #eeeeee;
-	margin: 0 0 0 10px;
-}
+.resume_post__date {
+  color: #888888; }
+
+.resume_post__role b {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333333; }
+.resume_post__role p {
+  line-height: 1.5em;
+  font-size: 1.2em;
+  color: #555555; }
+
+/*# sourceMappingURL=style.css.map */

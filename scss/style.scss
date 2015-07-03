@@ -1,0 +1,16 @@
+/*
+Theme Name: Modern Simplistic
+Theme URI: olekristian.com
+Description: Wordpress tema for olekristian.com 2015
+Version: 1.0
+Author: Ole Kristian Aune
+Author URI: olekristian.com
+*/
+
+// Here we import our partials
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/typography";
+
+// Here we import template specific styles
+@import "resume";

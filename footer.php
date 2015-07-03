@@ -1,7 +1,11 @@
-	<div class="footer">
-		<p>Copyright 2014 <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></p>
+<footer>
+	<div class="wrapper">
+		<div class="contact">
+			Laget av <span class="primarytextcolor">Ole Kristian Aune</span> &copy; <?php echo date("Y"); ?>
+		</div>
+		<?php include_once('modules/module_social_buttons.php'); ?>
 	</div>
-</div> <!-- end wrapper -->
+</footer>
 
 <?php wp_footer (); ?>
 

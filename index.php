@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-    <div id="box">
         <?php if(have_posts()) : ?>
             <?php while(have_posts()) : the_post(); ?>
                 <div class="post">
@@ -17,8 +16,6 @@
             <div class="navigation">
                 <?php posts_nav_link(); ?>
             </div>
-        <?php endif; ?>
-    </div>
+
 
 <?php get_footer(); ?>
-
