@@ -2,12 +2,12 @@
 	// Add sidebar to theme
 	if (function_exists('register_sidebar'))
 		register_sidebar(array(
-			'name'=>'Sidebar name',
-			'id'=>'sidebar_name',
+			'name'=>'Hero text',
+			'id'=>'hero_text',
 			'before_widget' => '',
 			'after_widget' => '',
-			'before_title' => '',
-			'after_title' => '',
+			'before_title' => '<div style="display: none;">',
+			'after_title' => '</div>',
 		)
 	);
 
