@@ -63,14 +63,6 @@ h4 {
     margin: 0;
     font-weight: 600; }
 
-/*_hero.scss*/
-body.home {
-  background: url(img/background-large.jpg) no-repeat center center/cover fixed; }
-
-.more {
-  margin-top: 20px;
-  padding: 0.5em 1.5em; }
-
 header {
   width: 100%;
   background: #ffffff;
@@ -94,6 +86,14 @@ header {
             transition: line-height .5s; }
     header a:hover {
       color: #000000; }
+
+/*_hero.scss*/
+body.home {
+  background: url(img/background-large.jpg) no-repeat center center/cover fixed; }
+
+.more {
+  margin-top: 20px;
+  padding: 0.5em 1.5em; }
 
 #intro {
   float: left;
@@ -138,10 +138,6 @@ header {
   width: 1130px;
   padding: 0 20px;
   margin: 0px auto; }
-
-.justified-gallery {
-  overflow: visible !important;
-  top: 90px; }
 
 .resume {
   padding: 50px 0; }

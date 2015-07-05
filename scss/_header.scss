@@ -1,0 +1,23 @@
+header {
+	width: 100%;
+	background: $white;
+	overflow: hidden;
+	position: fixed;
+	z-index: 99;
+	transition: box-shadow .5s;
+	top: 0;
+	a {
+		@include font-size(20px);
+    font-weight: 800;
+    color: $black;
+		text-align: center;
+		text-transform: uppercase;
+		height: 100%;
+		display: block;
+		line-height: 90px;
+		transition: line-height .5s;
+		&:hover {
+			color: $black;
+		}
+	}
+}

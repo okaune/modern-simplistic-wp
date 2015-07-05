@@ -9,30 +9,6 @@ body.home {
 	padding: 0.5em 1.5em;
 }
 
-header {
-	width: 100%;
-	background: $white;
-	overflow: hidden;
-	position: fixed;
-	z-index: 99;
-	transition: box-shadow .5s;
-	top: 0;
-	a {
-		@include font-size(20px);
-    font-weight: 800;
-    color: $black;
-		text-align: center;
-		text-transform: uppercase;
-		height: 100%;
-		display: block;
-		line-height: 90px;
-		transition: line-height .5s;
-		&:hover {
-			color: $black;
-		}
-	}
-}
-
 #intro {
 	float: left;
 	width: 100%;
@@ -83,9 +59,4 @@ header {
 	width: 1130px;
 	padding: 0 20px;
 	margin: 0px auto;
-}
-
-.justified-gallery {
-	overflow: visible !important;
-	top: 90px;
 }
