@@ -19,6 +19,10 @@ a {
     color: $primary-color;
     text-decoration: none;
   }
+	&:focus {
+		color: $primary-color;
+		text-decoration: none;
+	}
 }
 
 h1 {
