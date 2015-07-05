@@ -16,6 +16,7 @@ header {
 	position: fixed;
 	z-index: 99;
 	transition: box-shadow .5s;
+	top: 0;
 	a {
 		@include font-size(20px);
     font-weight: 800;

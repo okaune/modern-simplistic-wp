@@ -78,7 +78,8 @@ header {
   position: fixed;
   z-index: 99;
   -webkit-transition: box-shadow .5s;
-          transition: box-shadow .5s; }
+          transition: box-shadow .5s;
+  top: 0; }
   header a {
     font-size: 20px;
     font-size: 1.25rem;
@@ -167,6 +168,9 @@ header {
   font-size: 20px;
   font-size: 1.25rem;
   color: #555555; }
+
+.page footer {
+  background: #000000; }
 
 footer {
   min-height: 70px;
