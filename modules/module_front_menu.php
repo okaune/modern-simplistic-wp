@@ -1,5 +1,5 @@
 <div class="front-menu">
-	<a href="#" class="button">
+	<a href="/blogg" class="button">
 		<div class="blog">
 			<svg class="icon">
 					<use xlink:href="#icon-pencil" />
@@ -7,7 +7,7 @@
 			<p>Blogg</p>
 		</div>
 	</a>
-	<a href="#" class="button">
+	<a href="/galleri" class="button">
 		<div class="gallery">
 			<svg class="icon">
 					<use xlink:href="#icon-images" />
