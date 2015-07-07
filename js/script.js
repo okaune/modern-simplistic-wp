@@ -22,24 +22,27 @@ jQuery(document).ready(function($){
 	var headerHeight = $("header.mainheader").height();
 
 	// Attach the click event
-	$('a.more').click(function(e) {
-	    e.preventDefault();
+	if ($('a.more').length) {
+		$('a.more').click(function(e) {
+		    e.preventDefault();
 
-	    var target = $(this).attr("href"); //Get the target
-	    var scrollToPosition = $(target).offset().top - headerHeight;
+		    var target = $(this).attr("href"); //Get the target
+		    var scrollToPosition = $(target).offset().top - headerHeight;
 
-	    $root.animate({ scrollTop: scrollToPosition }, 500, function(){
-	        window.location.hash = "" + target;
-	        // This hash change will jump the page to the top of the div with the same id
-	        // so we need to force the page to back to the end of the animation
-	        $root.animate({ scrollTop: scrollToPosition }, 0);
-	    });
-	});
+		    $root.animate({ scrollTop: scrollToPosition }, 500, function(){
+		        window.location.hash = "" + target;
+		        // This hash change will jump the page to the top of the div with the same id
+		        // so we need to force the page to back to the end of the animation
+		        $root.animate({ scrollTop: scrollToPosition }, 0);
+		    });
+		});
+	}
 
 
 
 	// PARRALAX
 	// Cache the Window object
+	/* global $window: true */
 	$window = $(window);
 
 	$('section[data-type="background"]').each(function(){
@@ -84,7 +87,7 @@ jQuery(document).ready(function($){
 	});
 
 	//On start scroll
-	if ($('#profile').length == false) {
+	if ($('#profile').length === false) {
 		$(window).scroll(function() {
 	    	if( $(this).scrollTop() >= 30 ) {
 	    		$('header').css({"box-shadow":"1px 1px 10px #aaaaaa"});

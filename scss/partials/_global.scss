@@ -15,14 +15,18 @@ line-height: 1.6em;
 a {
   color: $primary-color;
 	text-decoration: none;
-  &:hover {
-    color: $primary-color;
-    text-decoration: none;
-  }
 	&:focus {
 		color: $primary-color;
 		text-decoration: none;
 	}
+	&:visited {
+		color: $primary-color;
+		text-decoration: none;
+	}
+	&:hover {
+    	color: $primary-hover;
+	    text-decoration: none;
+  	}
 }
 
 h1 {
@@ -59,8 +63,12 @@ h4 {
 	text-transform: uppercase;
 	margin: 0 1rem;
 	padding: 2rem 1rem;
+	&:visited {
+		background: $primary_color;
+		color: $white;
+	}
 	&:hover {
-		background: #ff8c00;
+		background: $primary_hover;
 	}
 	p {
 		margin: 0;
