@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="medium-8 column">
 			<h3>
-				<a href="<?php echo $url; ?>" target="_blank"><?php echo $name; ?></a>
+				<a class="resume_post__title" href="<?php echo $url; ?>" target="_blank"><?php echo $name; ?></a>
 			</h3>
 		</div>
 		<div class="resume_post__date medium-4 column medium-text-right"><?php echo $date; ?></div>
