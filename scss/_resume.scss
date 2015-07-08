@@ -6,11 +6,18 @@
 	color: $gray;
 	text-transform: uppercase;
 	text-align: left;
-	line-height: 0.9375em;
 }
 
 .resume_post {
 	margin-bottom: 0.625em;
+}
+
+.resume_post__h3 {
+	display: flex;
+	align-items: flex-end;
+  	flex-wrap: wrap;
+	justify-content: space-between;
+	white-space: nowrap;
 }
 
 .resume_post__title {
@@ -34,13 +41,14 @@
 
 .resume_post__date {
 	color: $gray;
+	@include font-size(16px);
 }
 
 .resume_post__role {
 	b {
 		@include font-size(20px);
 		font-weight: 600;
-		color: #333333;
+		color: $gray;
 	}
 	p {
 		line-height: 1.5em;

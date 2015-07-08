@@ -59,13 +59,19 @@
     </div>
     <div class="blog_tags column medium-4">
         <?php
-            $tags = get_tags();
-            if ($tags) {
-                foreach ($tags as $tag) {
-                    echo '<a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name.'</a> ';
-                }
-            }
-        ?>
+           $currentTag = get_queried_object()->term_id;
+           $all_tags = get_tags();
+           foreach ($all_tags as $tags) {
+               $tags_link = get_tag_link($tags->term_id);
+               echo '<a href="'.$tags_link.'"
+                   title="'.$tags->name.'"
+                   class="'.$tags->slug;
+               if ($tags->term_id == $currentTag) {
+                   echo ' post-tag--active';
+               }
+               echo ' post_tag">'.$tags->name.'</a>';
+           }
+       ?>
     </div>
 </div>
 

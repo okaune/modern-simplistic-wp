@@ -14,6 +14,9 @@
     &:hover {
         color: $white;
     }
+    p {
+        color: $white;
+    }
 }
 
 .feautured_image_content__h2 {
@@ -30,6 +33,10 @@
     &:hover {
         box-shadow: 0 0 1rem 0.0625rem $gray;
     }
+}
+
+.blog_post_link {
+    color: $gray;
 }
 
 .blog_post_date {
@@ -62,19 +69,24 @@
     margin-top: 1.5625em;
 }
 
-.blog_tags a {
+.post_tag {
     display: inline-block;
     position: relative;
     color: $black;
     text-transform: capitalize;
     border-top: 1px solid $black;
     border-bottom: 1px solid $black;
+    transition: margin 0.1s, padding 0.1s;
     padding: 0.2rem 0.5rem;
     margin: 0 0.5em 0.75em 0.5em;
-    transition: margin 0.1s, padding 0.1s;
     &:hover {
         padding: 0.2rem 1rem;
-        margin: 0 0 0.75em 0;
+        margin: 0 0 0.75rem 0;
+        color: $black;
+    }
+    &.post-tag--active {
+        padding: 0.2rem 0.5rem;
+        margin: 0 0.5rem 0.75rem 0.5rem;
     }
 
     &:before, &:after {
@@ -94,7 +106,7 @@
         right: -1px;
     }
 
-    &:hover:before, &:hover:after {
+    &:hover:before, &:hover:after, &.post-tag--active:before, &.post-tag--active:after {
         height: 100%;
     }
 }
