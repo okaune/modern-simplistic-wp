@@ -33,7 +33,7 @@
 	// Enqueue other scripts and styles
 	function theme_name_scripts() {
 		// Styles
-		wp_enqueue_style( 'normalize', get_template_directory_uri() . '/bower_components/normalize-css/normalize.css' );
+		//wp_enqueue_style( 'normalize', get_template_directory_uri() . '/bower_components/normalize-css/normalize.css' );
 		wp_enqueue_style( 'foundation', get_template_directory_uri() . '/bower_components/foundation/css/foundation.css' );
 		// wp_enqueue_style( 'justifiedGallery', get_template_directory_uri() . '/bower_components/Justified-Gallery/dist/css/justifiedGallery.min.css' );
 		wp_enqueue_style( 'styles', get_stylesheet_uri() );
