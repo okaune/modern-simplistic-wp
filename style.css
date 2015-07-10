@@ -91,6 +91,10 @@ body {
 h1, h2, h3, h4 {
   color: #000000; }
 
+h1 {
+  font-size: 48px;
+  font-size: 3rem; }
+
 h2 {
   font-size: 32px;
   font-size: 2rem; }
@@ -224,6 +228,7 @@ body.home {
   padding: 0 20px;
   margin: 0px auto; }
 
+/*_resume.scss */
 .resume {
   padding: 50px 0; }
 
@@ -275,16 +280,17 @@ body.home {
   font-size: 16px;
   font-size: 1rem; }
 
-.resume_post__role b {
+.resume_post__role {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 600;
   color: #333333; }
-.resume_post__role p {
-  line-height: 1.5em;
-  font-size: 20px;
-  font-size: 1.25rem;
-  color: #555555; }
+
+.resume_post__entry a {
+  font-weight: 600; }
+  .resume_post__entry a:hover {
+    text-decoration: underline;
+    color: #f79b2e; }
 
 .feautured_image {
   margin-top: 90px;
@@ -377,6 +383,23 @@ body.home {
     right: -1px; }
   .post_tag:hover:before, .post_tag:hover:after, .post_tag.post-tag--active:before, .post_tag.post-tag--active:after {
     height: 100%; }
+
+/*_single.scss */
+.single-blog {
+  margin-top: 90px; }
+
+.entry p {
+  margin-bottom: .7rem;
+  color: #000000; }
+.entry blockquote {
+  margin-left: 2rem;
+  border-left: 3px solid #000000;
+  padding-left: .5rem;
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+.single footer {
+  background: #000000; }
 
 .page footer, .blog footer {
   background: #000000; }

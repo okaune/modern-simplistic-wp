@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
-    <div class="box">
+    <div class="single-blog row">
+
         <?php if(have_posts()) : ?>
             <?php while(have_posts()) : the_post(); ?>
-                <div class="post">
+                <div class="column">
                     <h1>
                         <?php the_title(); ?>
                     </h1>
@@ -16,8 +17,7 @@
                 <?php posts_nav_link(); ?>
             </div>
         <?php endif; ?>
+
     </div>
-    
-    <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

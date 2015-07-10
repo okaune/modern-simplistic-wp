@@ -1,3 +1,4 @@
+/*_resume.scss */
 .resume {
 	padding: 50px 0;
 }
@@ -45,14 +46,17 @@
 }
 
 .resume_post__role {
-	b {
-		@include font-size(20px);
-		font-weight: 600;
-		color: $gray;
-	}
-	p {
-		line-height: 1.5em;
-		@include font-size(20px);
-		color: #555555;
+	@include font-size(20px);
+	font-weight: 600;
+	color: $gray;
+}
+
+.resume_post__entry {
+	a {
+	font-weight: 600;
+		&:hover {
+			text-decoration: underline;
+			color: $primary_color;
+		}
 	}
 }

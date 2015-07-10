@@ -1,0 +1,28 @@
+/*_single.scss */
+.single-blog {
+    margin-top: 90px;
+}
+
+// Whats in the blog post
+.entry {
+    p {
+        margin-bottom: .7rem;
+        color: $black;
+    }
+    blockquote {
+        margin-left: 2rem;
+        border-left: 3px solid $black;
+        padding-left: .5rem;
+        @include font-size(24px);
+    }
+}
+
+
+
+
+
+
+
+.single footer {
+    background: $black;
+}

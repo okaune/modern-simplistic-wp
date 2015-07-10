@@ -11,7 +11,7 @@
 	</div>
 	<div class="row">
 		<div class="resume_post__role column"><b><?php echo $type; ?></b></div>
-		<p class="column"><?php echo $desc; ?></p>
+		<p class="resume_post__entry column"><?php echo $desc; ?></p>
 	</div>
 </article>
 

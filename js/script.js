@@ -70,24 +70,21 @@ jQuery(document).ready(function($){
 	   var window_top = $(window).scrollTop();
 	   var div_top = $('#profile').offset().top + 30 - headerHeight;
 
-
-
 	   if (window_top > div_top){
-	      $('header').css({"box-shadow":"1px 1px 10px #aaaaaa"});
-	      $('header a').css({"line-height":"60px"});
+		  $('header').css({"box-shadow":"1px 1px 10px #aaaaaa"});
+		  $('header a').css({"line-height":"60px"});
 	   } else {
-	   	  $('header').css({"box-shadow":"none"});
-	   	  $('header a').css({"line-height":"90px"});
+		  $('header').css({"box-shadow":"none"});
+		  $('header a').css({"line-height":"90px"});
 	   }
 	}
 
-	$(function() {
-	  $(window).scroll(scroll_style);
-	  scroll_style();
-	});
-
 	//On start scroll
-	if ($('#profile').length === false) {
+	if ($('#profile').length !== false) {
+		$(window).scroll(function(){
+			scroll_style();
+		});
+	} else {
 		$(window).scroll(function() {
 	    	if( $(this).scrollTop() >= 30 ) {
 	    		$('header').css({"box-shadow":"1px 1px 10px #aaaaaa"});
