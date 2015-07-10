@@ -2,16 +2,17 @@
 
 <section id="profile">
 		<div class="resume">
+
 			<section id="education" class="row">
 				<aside class="resume_type medium-2 column">
 					<div class="row">
-						<h4 class="column">Utdanning</h4>
+						<h4 class="column">Erfaring</h4>
 					</div>
 				</aside>
 				<?php
 				  $resume_query_args = array(
 				    'post_type' => $post_type,
-						'resumecategory' => 'utdanning',
+						'resumecategory' => 'erfaring',
 						'post_status' => 'publish',
 				    'orderby' => 'date',
 				    'order' => 'DESC',
@@ -38,13 +39,13 @@
 			<section id="education" class="row">
 				<aside class="resume_type medium-2 column">
 					<div class="row">
-						<h4 class="column">Erfaring</h4>
+						<h4 class="column">Utdanning</h4>
 					</div>
 				</aside>
 				<?php
 				  $resume_query_args = array(
 				    'post_type' => $post_type,
-						'resumecategory' => 'erfaring',
+						'resumecategory' => 'utdanning',
 						'post_status' => 'publish',
 				    'orderby' => 'date',
 				    'order' => 'DESC',

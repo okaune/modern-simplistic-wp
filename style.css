@@ -98,7 +98,8 @@ h2 {
 h3 {
   font-size: 24px;
   font-size: 1.5rem;
-  font-weight: 500; }
+  font-weight: 500;
+  margin-bottom: .3rem; }
 
 h4 {
   font-size: 16px;
@@ -232,7 +233,7 @@ body.home {
   text-align: left; }
 
 .resume_post {
-  margin-bottom: 0.625em; }
+  margin-bottom: 1.5rem; }
 
 .resume_post__h3 {
   display: -webkit-box;
