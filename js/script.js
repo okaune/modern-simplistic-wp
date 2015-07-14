@@ -80,7 +80,7 @@ jQuery(document).ready(function($){
 	}
 
 	//On start scroll
-	if ($('#profile').length !== false) {
+	if ($('#profile').length !== 0) {
 		$(window).scroll(function(){
 			scroll_style();
 		});

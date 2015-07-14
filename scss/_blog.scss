@@ -87,6 +87,7 @@
     &.post-tag--active {
         padding: 0.2rem 0.5rem;
         margin: 0 0.5rem 0.75rem 0.5rem;
+        cursor: default;
     }
 
     &:before, &:after {

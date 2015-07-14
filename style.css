@@ -366,7 +366,8 @@ body.home {
     color: #000000; }
   .post_tag.post-tag--active {
     padding: 0.2rem 0.5rem;
-    margin: 0 0.5rem 0.75rem 0.5rem; }
+    margin: 0 0.5rem 0.75rem 0.5rem;
+    cursor: default; }
   .post_tag:before, .post_tag:after {
     display: block;
     position: absolute;
@@ -385,8 +386,40 @@ body.home {
     height: 100%; }
 
 /*_single.scss */
-.single-blog {
+.single_blog {
   margin-top: 90px; }
+
+.single_blog h1 {
+  text-align: center;
+  border-bottom: 1px solid #000000; }
+
+.entry_date {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+  background: #000000; }
+  .entry_date:before {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    width: 0.0625rem;
+    top: -3rem;
+    left: 50%;
+    background: #000000; }
+
+.entry_date_element {
+  display: block;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+.entry_date_day {
+  font-size: 64px;
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 1rem 0; }
 
 .entry p {
   margin-bottom: .7rem;

@@ -1,6 +1,47 @@
 /*_single.scss */
-.single-blog {
+.single_blog {
     margin-top: 90px;
+}
+
+.single_blog h1 {
+    text-align: center;
+    border-bottom: 1px solid $black;
+}
+
+// Date styling
+.entry_date {
+    margin-top: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    background: $black;
+    &:before {
+        content: "";
+        position: absolute;
+        height: 3rem;
+        width: 0.0625rem;
+        top: -3rem; // Making up for the 3px border size
+        left: 50%;
+        background: $black;
+    }
+}
+
+.entry_date_element {
+    display: block;
+    color: $white;
+    text-transform: capitalize;
+    @include font-size(24px);
+}
+.entry_date_month {
+
+}
+.entry_date_day {
+    @include font-size(64px);
+    font-weight: 600;
+    margin: 1rem 0;
+}
+.entry_date_year {
+
 }
 
 // Whats in the blog post

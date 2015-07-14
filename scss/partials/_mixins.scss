@@ -34,12 +34,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  @include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+  transform: translate(-50%, -50%);
 }
 
 // Center vertical block
 @mixin center-vertical {
   position: relative;
   top: 50%;
-  @include prefix(transform, translateY(-50%), 'webkit' 'ms');
+  transform: translateY(-50%);
 }
